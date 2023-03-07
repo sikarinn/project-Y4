@@ -24,7 +24,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <!-- ================= BOXICONS ================= -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- ================= UNICONS ================= -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <title>HeritageLaws</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -40,4 +52,23 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-icon="https:&#x2F;&#x2F;github.com&#x2F;s6210110342&#x2F;pic-project&#x2F;blob&#x2F;main&#x2F;icons8-chat-64.png?raw=true"
+    intent="WELCOME"
+    chat-title="HeritageLaws Bot"
+    agent-id="d33350a3-bb06-4a3b-ab97-14cd6bbd2163"
+    language-code="th"
+  ></df-messenger
+  >
+  <style>
+    df-messenger {
+      --df-messenger-bot-message: #576b9e;
+      --df-messenger-button-titlebar-color: #576b9e;
+      --df-messenger-chat-background-color: #fafafa;
+      --df-messenger-font-color: white;
+      --df-messenger-send-icon: #878fac;
+      --df-messenger-user-message: #d59292;
+    }
+  </style>
 </html>
